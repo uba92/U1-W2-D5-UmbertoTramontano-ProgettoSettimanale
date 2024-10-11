@@ -23,20 +23,20 @@ for(let i=0; i<pets.length; i++) {
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
 
-// //Array Sort() è un metodo che permette di ordinare alfabeticamente gli elementi di tipo stringa di un array
-// console.log(pets)
-// console.log(pets.sort())
+//Array Sort() è un metodo che permette di ordinare alfabeticamente gli elementi di tipo stringa di un array
+console.log(pets)
+console.log(pets.sort())
 
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
 
-// const reversePets = []
+const reversePets = []
 
-// for(let i=0; i<pets.length; i++) {
-//   reversePets.push(pets[pets.length-(i+1)])
-// }
-// console.log(reversePets)
+for(let i=0; i<pets.length; i++) {
+  reversePets.push(pets[pets.length-(i+1)])
+}
+console.log(reversePets)
 
 //Oppure più velocemente con il metodo reverse() - console.log(pets.reverse())
 
@@ -85,12 +85,12 @@ const cars = [
   },
 ]
 
-// for(let i = 0; i < cars.length; i++) {
-//   //accedo ad ogni elemento dell'array cars e aggiungo con la dot notation la proprietà 'licensPlate' alla quale assegno un valore in base all'indice di ognuno di essi
-//   cars[i].licensePlate = 'AA' + i + i + i + 'ZZ'
-// }
+for(let i = 0; i < cars.length; i++) {
+  //accedo ad ogni elemento dell'array cars e aggiungo con la dot notation la proprietà 'licensPlate' alla quale assegno un valore in base all'indice di ognuno di essi
+  cars[i].licensePlate = 'AA' + i + i + i + 'ZZ'
+}
 
-// console.log(cars)
+console.log(cars)
 
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
