@@ -78,7 +78,7 @@ main div:nth-of-type(2) p {
     margin-top: 2em;
 }
 
-#first-section section section {
+#first-section #container-img section {
     display: inline-block;
     width: 23%;
     padding: 0 0.5em;
